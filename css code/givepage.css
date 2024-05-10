@@ -1,0 +1,593 @@
+:root {
+    --yellow: yellow;
+    --green: green;
+    --blue: blue;
+    --white: white;
+    --black: rgb(80, 74, 74);
+    --orange: orange;
+    --light-blue: #A3D8FF;
+    --light-green: #94FFD8;
+    --red: red;
+}
+
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(222, 233, 191, 0.852);
+    
+}
+
+/* ------------------------------ Navigation Bar -------------------------- */
+header {
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.landing{
+    background-image: url("../images/bgcolor.png");
+    background-size:cover;
+    background-position:left;
+    width: 100vw;
+    min-height: 100vh;
+    margin-bottom: 0;
+}
+
+.rpmc-logo {
+    width: 4%;
+    height: 4%;
+    margin-left: 3em;
+}
+.link {
+    padding:30px;
+    padding-left:0;
+    padding-right:60px;
+} 
+header a {
+    text-decoration: none;
+    color: var(--yellow);
+    font-size: 2.5em;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}    
+.menu {
+    display: none;
+}
+.banner1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 4px;
+    padding-left: 60px;
+    margin-top: 50px;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--red);
+}
+
+/* -------------------- GIVE page CSS ---------------------- */
+.head1 {
+    text-align: center;
+    font-size: 5em;
+}
+
+.head1:hover {
+    color:rgb(159, 114, 58);
+    transform: scale(1.5);
+}
+
+.container {
+    /* border: 2px solid black; */
+    /* display: flex; */
+    margin: 20px
+}
+
+.maintxt {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+    /* flex-wrap: wrap; */
+    /* width: 100vw; */
+}
+
+#donate-img {
+    flex-basis: 50%;
+    margin: 0 3vw 2vw;
+    border: 10px solid var(--black);
+    min-height: 70px;
+    max-height: 500px;
+    min-width: 70px;
+    max-width: 1000px;
+}
+#para1 {
+    color: rgb(80, 73, 73);
+    flex-basis: 50%;
+    text-align: justify;
+    text-indent: 5vw;
+    line-height: 2.3vw;
+    font-size: 2.3em;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px 30px 0px 0px;
+}
+
+/* .paratxt {
+    display: flex;
+} */
+
+.para2 {
+    color: rgb(57, 58, 4);
+    font-size: 40px;
+    text-align:center; 
+    padding: 0 10px 30px 10px;
+    margin-bottom: 0px;  
+}
+
+#account-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 75vh;
+    width: 100vw;
+    background-color: rgba(222, 233, 191, 0.852);
+    margin-top: 0;
+}
+
+#acc_head {
+    text-align: center;
+    margin-top: 0px;
+    padding: 60px 0 10px 0;
+    font-size: 3.5vw;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(215, 212, 113);
+    padding: 30px 150px;
+}
+
+.detail p {
+    font-size: 3em;
+}
+
+#detailpara1 {
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+@media (max-width:2070px){
+    
+    /* ----------------------------- COMMON CODE START --------------------- */
+    .rpmc-logo {
+        width: 80px;
+        height: 80px;
+        margin-left: 50px;
+        /* align-self: flex-start; */
+    }
+
+    header a {
+        text-decoration: none;
+        color: var(--yellow);
+        font-size: 2em;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .line1, .line2, .line3 {
+        background-color: var(--yellow);
+        height: .4em;
+        width: 2.3em;
+        margin: 5px;
+    }
+    
+    .menu {
+        display: block;
+        cursor: pointer;
+        padding-right: 50px;
+    }
+    
+    .menumover {
+        display:flex;
+        flex-direction: column;
+        align-self: flex-start;
+        margin: 20px 0px;
+    }
+
+    .showmenu {
+        /* position: relative; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .imgresize {
+        height: 50px;
+        width: 50px;
+    }
+
+    .banner1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 4px;
+        padding-left: 60px;
+        margin-top: 50px;
+        font-size: 3em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--red);
+    }
+/* ----------------------------- COMMON CODE END --------------------- */
+
+    .maintxt {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* width: 100vw; */
+    }
+
+    .head1 {
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    #donate-img {
+        flex-basis: 100%;
+        margin-left: 5vw;
+        border: 10px solid var(--black);
+        min-height: 70px;
+        max-height: 500px;
+        min-width: 70px;
+        max-width: 1000px;
+    }
+
+    #para1 {
+        color: rgb(80, 73, 73);
+        flex-basis: 100%;
+        text-align: justify;
+        text-indent: 5vw;
+        line-height: 1.5em;
+        font-size: 2em;
+        padding: 20px;
+        margin: 0px 30px 50px;
+    }
+
+    .para2 {
+        color: rgb(57, 58, 4);
+        font-size: 2em;
+        text-align:center;   
+    }
+
+    #acc_head {
+        text-align: center;
+        margin-top: 0px;
+        padding: 30px 0 10px 0;
+        font-size: 4em;
+        
+    }
+
+    .detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(215, 212, 113);
+        padding: 30px 40px;
+    }
+
+    .detail p {
+        font-size: 3em;
+    }
+    
+    #detailpara1 {
+        font-size: 4em;
+        font-weight: bolder;
+    }
+}
+
+/* --------------------- CSS STYLE FOR TABLET --------------------------*/
+@media (max-width:999px) {
+    /* ----------------------------- COMMON CODE START --------------------- */
+    .rpmc-logo {
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+    }
+
+    .link {
+        padding:30px;
+    } 
+
+    nav {
+        display: none;
+    }
+
+    .line1, .line2, .line3 {
+        background-color: var(--yellow);
+        height: .4em;
+        width: 2.3em;
+        margin: 5px;
+    }
+    
+    .menu {
+        cursor: pointer;
+        padding-right: 0;
+    }
+    
+    .imgresize {
+        margin:0;
+        height: 70px;
+        width: 70px;
+        padding-left:30px;
+    }
+
+    .showmenu {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 130px;
+            flex-wrap: wrap;     
+    }
+
+    .banner1 {
+        text-align: center;
+        letter-spacing: 3px;
+        padding-left: 0px;
+        margin-top: 30px;
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--red);
+    }
+/* ----------------------------------------------- COMMON CODE END ----------------- */
+
+    /* ------------- For GIVE page -------------- */
+    .maintxt {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* width: 100vw; */
+    }
+
+    .head1 {
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    #donate-img {
+        flex-basis: 100%;
+        margin-left: 5vw;
+        border: 10px solid var(--black);
+        min-height: 70px;
+        max-height: 500px;
+        min-width: 70px;
+        max-width: 1000px;
+    }
+
+    #para1 {
+        color: rgb(80, 73, 73);
+        flex-basis: 100%;
+        text-align: justify;
+        text-indent: 5vw;
+        line-height: 4.3vw;
+        font-size: 3vw;
+        padding: 20px;
+        margin: 0px 30px 0px;
+    }
+
+    .paratxt{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .para2 {
+        padding: 0 50px 15px;
+        color: rgb(57, 58, 4);
+        font-size: 20px;
+        text-align:justify;  
+        flex:1; 
+        margin: 0;
+    }
+    .paratxt2 {
+        padding-bottom: 35px;
+    }
+    #account-details {
+        min-height: 80vh;
+    }
+
+    #acc_head {
+        text-align: center;
+        margin-top: 0px;
+        padding: 30px 0 10px 0;
+        font-size: 5vw;
+        
+    }
+
+    .detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: cente;
+        background-color: rgb(215, 212, 113);
+        padding: 10px 20px;
+    }
+
+    .detail p {
+        font-size: 2em;
+    }
+
+    #detailpara1 {
+        font-size: 2em;
+        font-weight: bolder;
+    }
+}
+
+/* ----------------------------------------------- COMMON CODE START ----------------- */
+
+nav a:hover {
+    font-size: 2.2em;
+    color: orange;
+}
+
+nav a:active {
+    color: rgb(225, 19, 19);
+}
+/* ----------------------------------------------- COMMON CODE END ----------------- */
+
+
+/* --------------------- CSS STYLE FOR MOBILE PHONE --------------------------*/
+@media (max-width:426px) {
+
+    /* ----------------------------------------------- COMMON CODE START ----------------- */
+    .rpmc-logo {
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+    }
+
+    .link {
+        padding:30px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .line1, .line2, .line3 {
+        background-color: var(--yellow);
+        height: .4em;
+        width: 2.3em;
+        margin: 5px;
+    }
+    
+    .menu {
+        cursor: pointer;
+        padding-right: 0;
+    }
+    
+    .imgresize {
+        margin:0;
+        height: 70px;
+        width: 70px;
+        padding:0px;
+    }
+
+    .showmenu {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-wrap: wrap; 
+            padding-left: 20px;
+    }
+/* ----------------------------------------------- COMMON CODE END ----------------- */
+
+    /* ------------- For GIVE page -------------- */
+    .maintxt {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* width: 100vw; */
+    }
+
+    .head1 {
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    #donate-img {
+        flex-basis: 100%;
+        margin-left: 5vw;
+        border: 10px solid var(--black);
+        min-height: 70px;
+        max-height: 500px;
+        min-width: 70px;
+        max-width: 1000px;
+    }
+
+    #para1 {
+        color: rgb(80, 73, 73);
+        flex-basis: 100%;
+        text-align: justify;
+        text-indent: 7vw;
+        line-height: 5.5vw;
+        font-size: 14px;
+        text-shadow: 6px;  
+        padding: 20px;
+        padding-top: 3px;
+        margin:0;
+    }
+
+    .para2 {
+        color: rgb(57, 58, 4);
+        font-size: 13px;
+        text-align:center; 
+        font-weight: bolder;
+    }
+    .paratxt2 {
+        padding-bottom: 15px;
+    }
+
+    #account-details {  /* *************************** */
+        min-height: 35vh;
+        margin-bottom: 20vw;
+    }
+
+    #acc_head {
+        text-align: center;
+        margin-top: 0px;
+        padding: 20px 0 10px 0;
+        font-size: 6vw;
+    }
+
+    .detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(215, 212, 113);
+        padding: 10px 20px;
+    }
+
+    .detail p {
+        font-size: 1.3em;
+    }
+    
+    #detailpara1 {
+        font-size: 1.3em;
+        font-weight: bolder;
+    }
+
+}
+
+@media (max-width: 376px) {
+
+    /* ----------------------------------------------- COMMON CODE START ----------------- */
+    .banner1 {
+        text-align: center;
+        letter-spacing: 0px;
+        padding-left: 0px;
+        margin-top: 30px;
+        font-size: 1em;
+        font-weight: bolder;
+        font-stretch: expanded;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--red);
+    }
+
+    .showmenu {
+        padding-left: 5px;
+    }
+/* ----------------------------------------------- COMMON CODE END ----------------- */
+}

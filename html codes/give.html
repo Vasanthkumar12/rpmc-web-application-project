@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css code/givepage.css">
+    <title>Give - Royal Priesthood Mission Church</title>
+</head>
+<body>
+    <div class="landing">
+        <header>
+            <img class="rpmc-logo" src="/images/image.png" alt="RPMC Logo">
+            <nav>
+                <a class="link" href="home.html">Home</a>
+                <a class="link" href="about.html">About</a>
+                <a class="link" href="services.html">Services</a>
+                <a class="link" href="services.html">Our Ministries</a>
+                <a class="link" href="whatwethink.html">International Missions</a>
+                <a class="link" href="events.html">Sermons</a>
+                <a class="link" href="events.html">Events</a>
+                <a class="link" href="contact.html">Contact</a>
+            </nav>
+            
+            <div class="menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h1 class="head1">Serve Through</h1>
+            <h1 class="head1">GIVING</h1>
+            <div class="maintxt">
+                <img id="donate-img" src="/images/donateimg.png" alt="Donate Image">
+                <p id="para1">GIVING the Lord said "It is more blessed to give than to receive(Acts 20:35 KNJV). Christian giving is sowing (2Cor 9:6-8) the principle is what we sow we shall reap, It's the Lord's promise that he would multiply what we sow we shall reap, It's the Lord's promise that he would multiply what we sowed not add to it (2 Cor 9:10). Our giving for His work glorifies God (2 Cor 9:13).</p>
+            </div>
+            <div class="paratxt">
+                <p class="para2">1) Giver: You can invest into the Lord's work by giving as the Lord leads you cheerfully one time or when you are inspired.</p>
+                <p class="para2 paratxt2">2) Partnership in the gospel work: you can be a partner in praying along with us and serve the Lord with us as investing into the mission work on regular basis every month (Phil 1:3-6)</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="account-details">
+        <h1 id="acc_head">Account Details</h1>
+        <div class="detail">
+            <p id="detailpara1">Royal Priesthood Mission</p>
+            <p>ICICI bank</p>
+            <p>A/C : 185001000702</p>
+            <p>IFSC CODE : ICIC0001850</p>
+        </div>
+    </div>
+</body>
+<script>
+    const menu = document.querySelector('.menu')
+    const menuList = document.querySelector('header nav')
+    const image = document.querySelector('header img')
+    // const container1 = document.querySelector('body')
+    menu.addEventListener('click',()=>{
+        menu.classList.toggle('menumover')
+        menuList.classList.toggle('showmenu')
+        image.classList.toggle('imgresize')
+        // container1.classList.toggle('con')
+    })
+</script>
+
+</html>
