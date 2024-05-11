@@ -210,6 +210,7 @@ nav {
 
 .our_ministries {
     padding: 0px 80px;
+    padding-bottom: 80px; 
 }
 .our_ministries h1 {
     margin-top: 40px;
@@ -274,6 +275,119 @@ nav {
     opacity: 1;
     color: yellow;
 }
+
+/* ------------------ FOOTER PAGE ------------------- */
+.footer {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(32, 32, 32);
+    font-size: 20px;
+    color: white;
+    border-bottom: 2px solid #ffffff;
+}
+.footer_head {
+    color: var(--yellow);
+    font-size: 2.5em;
+    padding-left: 3%;
+}
+.footer div img{
+    padding-left: 3px;
+    height: 5vw;
+    width: 5vw;
+}
+.first_div{
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 45px;
+    min-height: 280px;
+    min-width: 280px;
+    max-width: 800px;
+    padding: 2%;
+    padding-bottom: 0;
+}
+.quick_links_div {
+    flex:1;
+    padding: 0% 5% 0% 15%;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.quick_links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.quick_links_div a {
+    text-decoration: none;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+.contact_us_div{
+    flex:1;
+    padding: 0% 5% 3% 5%;
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.icon {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 10px;
+}
+.icon p, address{
+    flex:1;
+}
+.icon i{
+    font-size: 35px; 
+}
+.contact {
+    font-size: 35px;
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+address{
+    font-size: 35px;
+    padding-left: 20px;
+    padding-right: 2px;
+}
+.copyrights_and_socialmedias{
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    padding-top: 30px;
+    background-color: rgb(32, 32, 32);
+}
+.copyrights_and_socialmedias h2{
+    margin-top: 0;
+    padding: 10px;
+}
+#cpyright{
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+.socialmedia_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+.socialmedia_icons p img{
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 70px;
+    width: 70px;
+}
+.socialmedia_icons p {
+    margin-top: 0;
+}
+
 /*  ---------------------------------------- Home Page CSS ------------------------- */
 
 @media (max-width:2070px){
@@ -445,6 +559,81 @@ nav {
         flex: 2;
         width: 40vw;
         height: 28vw
+    }
+        
+    /* ------------------ FOOTER PAGE ------------------- */
+    .footer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: rgb(32, 32, 32);
+        font-size: 20px;
+        color: white;
+    }
+    .footer_head {
+        color: var(--yellow);
+        font-size: 2.5em; /* ======= */
+        padding-left: 3%;
+    }
+    .footer div img{
+        padding-left: 3px;
+        height: 10vw;/* ====== */
+        width: 10vw;/* ====== */
+    }
+    .first_div{
+        text-align: center;
+        font-size: 1.5em; /* ====== */
+        line-height: 45px; /* ====== */
+        min-height: 280px;
+        min-width: 280px;
+        max-width: 800px;
+        padding: 5%;
+        padding-bottom: 0;
+    }
+    .quick_links_div {
+        flex:1;
+        padding: 2% 5% 0% 5%;  /* ====== */
+        min-width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .quick_links_div a {
+        text-decoration: none;
+        font-size: 35px;  /* ====== */
+        color: rgb(255, 255, 255);
+        padding-bottom: 30px;
+        padding-left: 10px;
+    }
+    .contact_us_div{
+        flex:1;
+        padding: 0% 5% 0% 5%;
+        min-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .icon {
+        display: flex;
+        justify-content: flex-start;
+        padding-right: 10px;
+    }
+    .icon p, address{
+        flex:1;
+    }
+    .icon i{ /* ====== */
+        font-size: 35px; 
+    }
+    .contact {
+        font-size: 35px; /* ====== */
+        margin-top: 0;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    address{
+        font-size: 35px; /* ====== */
+        padding-left: 20px;
+        padding-right: 2px;
     }
 }
 
@@ -622,6 +811,50 @@ nav {
     }
     .mediaimg2, .mediaimg1 {
         text-align: center;
+    }
+    
+    /* ------------------ FOOTER PAGE ------------------- */
+  
+    .footer_head {
+        font-size: 1.7em;
+    }
+    .footer div img{
+        height: 80px;
+        width: 80px;
+    }
+    .first_div{
+        font-size: 1.2em;
+        line-height: 40px;
+    }
+    .quick_links_div {
+        padding: 0;
+        padding-left: 2%;
+    }
+    .quick_links_div a {
+        font-size: 1.2em;
+    }
+    .contact_us_div{
+        padding: 0;
+        min-width: 280px;
+    }
+    .icon i{
+        font-size: 30px; 
+    }
+    .icon p, address{
+        flex:1;
+    }
+    .contact {
+        font-size: 1.1em;
+        padding-right: 5px;
+    }
+    address{
+        font-size: 1.1em;
+    }
+    .copyrights_and_socialmedias h2{
+        font-size: 1em;
+    }
+    #cpyright{
+        font-size: 0.7em;
     }
 }
 
@@ -824,6 +1057,63 @@ nav a:active {
         background-position: right;
         padding-left: 30px;
     }
+
+    /* ------------------ FOOTER PAGE ------------------- */
+    .footer_head {
+        align-self: flex-start;
+        padding-left: 10px;
+        font-size: 25px;
+    }
+    .footer div img{
+        height: 80px;
+        width: 80px;
+    }
+    .first_div{
+        font-size: 1.2em;
+        line-height: 40px;
+    }
+    .first_div p{
+        font-size: 20px;
+        padding: 0 10px;
+    }
+    .quick_links_div {
+        padding: 0;
+        padding-left: 2%;
+    }
+    .quick_links_div a {
+        padding-left: 50px;
+        font-size: 1.2em;
+    }
+    .contact_us_div{
+        padding: 0;
+        min-width: 280px;
+    }
+    .icon i{
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .icon p, address{
+        flex:1;
+    }
+    .contact {
+        font-size: 20px;
+        padding-right: 5px;
+    }
+    address{
+        font-size: 20px;
+    }
+    .socialmedia_icons p img{
+        padding-right: 15px;
+        padding-left: 15px;
+        height: 40px;
+        width: 40px;
+    }
+    .copyrights_and_socialmedias h2{
+        font-size: 0.7em;
+    }
+    #cpyright{
+        font-size: 0.5em;
+    }
 }
 
 @media (max-width: 376px) {
@@ -843,6 +1133,13 @@ nav a:active {
 
     .showmenu {
         padding-left: 5px;
+    }
+    /* ------------------------- FOOTER PAGE -------------------  */
+    .socialmedia_icons p img{
+        padding-right: 8px;
+        padding-left: 10px;
+        height: 30px;
+        width: 30px;
     }
 /* ----------------------------------------------- COMMON CODE END ----------------- */
 }
